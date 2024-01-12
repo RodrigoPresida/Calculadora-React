@@ -1,8 +1,10 @@
-function Input() {
+import { InputContainer } from './styles'
+
+const Input = ({value}) => {
     return (
-        <div className="App">
-            Olá
-        </div>
+        <InputContainer>
+            <input disable value={value}/>  
+        </InputContainer>
     );
 }
 
